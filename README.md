@@ -19,12 +19,12 @@ Goto http://localhost/phpmyadmin/
 Create new database tododb
 ```
 ```bash
-  npm install todolist-graphql
-  cd todolist-graphql
+npm install todolist-graphql
+cd todolist-graphql
 ```
 ```bash
-  nodemon server.js
-  http://localhost:4000/graphql
+nodemon server.js
+http://localhost:4000/graphql
 ```
 ```
 Start todolist
