@@ -32,6 +32,12 @@ npm install todolist
 cd todolist
 npm start
 ```
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`Port=4000`
+
 ## Usage/Examples
 
 ```
