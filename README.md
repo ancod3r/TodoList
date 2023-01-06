@@ -9,14 +9,28 @@ Add todos, Update, Delete and Strikethrough todos.
 ## Installation
 
 Install todolist with npm
+```
+Xampp - https://www.apachefriends.org/download.html
+Nodejs - https://nodejs.org/en/download/
 
+Start Xampp - Apache and MySQL
+Goto http://localhost/phpmyadmin/
+
+Create new database tododb
+```
 ```bash
-  npm install todolist
-  cd todolist
+  npm install todolist-graphql
+  cd todolist-graphql
 ```
 ```bash
   nodemon server.js
-  npm start
+  http://localhost:4000/graphql
+```
+```
+Start todolist
+npm install todolist
+cd todolist
+npm start
 ```
 ## Usage/Examples
 
