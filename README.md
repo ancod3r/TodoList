@@ -1,7 +1,7 @@
 
 # TodoList Web Application
 
-Add todos, Update, Delete and Strikethrough todos.
+Todolist Web Application. Project made using NodeJS, Express, GraphQL, Apollo-Client, React, Sequelize ORM and MySQL, Here you can  Add todos, Update, Delete and Strikethrough todos,  All data are stored in MySQL Database for Persistence.
 
 
 
