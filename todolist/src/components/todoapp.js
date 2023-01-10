@@ -4,6 +4,7 @@ import { GET_MSG_LIST } from '../graphql/queries'
 import { ADD_MSG, UPDATE_MSG, DELETE_MSG, TOGGLE_MSG } from '../graphql/mutations'
 
 const Todoapp = () => {
+  console.log(useState);
 // Hooks
   const { data, error } = useQuery(GET_MSG_LIST)
   const [msgAdd] = useMutation(ADD_MSG)
@@ -130,7 +131,7 @@ async function editItem(index) {
                     <i className='far fa-trash-alt add-btn' onClick={() => deleteTodo(items.id)} />
                   </div>
                 </div>
-		  ))
+		))
               : null};
           </div>
         </div>
