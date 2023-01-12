@@ -4,7 +4,7 @@ import { GET_MSG_LIST } from '../graphql/queries'
 import { ADD_MSG, UPDATE_MSG, DELETE_MSG, TOGGLE_MSG } from '../graphql/mutations'
 
 const Todoapp = () => {
-  console.log(useState);
+// console.log(useState);
 // Hooks
   const { data, error } = useQuery(GET_MSG_LIST)
   const [msgAdd] = useMutation(ADD_MSG)
