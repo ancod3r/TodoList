@@ -12,29 +12,29 @@ const Todoapp = () => {
   const [msgDelete] = useMutation(DELETE_MSG)
   const [msgToggle] = useMutation(TOGGLE_MSG)
 
-// State and local variables
+  // State and local variables
   const [userInput, setUserInput] = useState('')
   const [isEditItem, setIsEditItem] = useState('')
   const [editButton, setEditButton] = useState(false)
 
-// Local Functions
-  async function AddTodo(event){
+  // Local Functions
+  async function AddTodo (event) {
     event.preventDefault()
     if (!userInput.trim()) {
       alert('Blank text/spaces cannot be added. . .')
     } else if (userInput && editButton) {
       data.msglist.map((items) => {
         if (items.id === isEditItem) {
-          return	{ ...items,	jobtodo: userInput }
-          }
-          return items
+          return { ...items, jobtodo: userInput }
+        }
+        return items
       })
       const variables = {
         id: isEditItem,
         jobtodo: userInput
       }
       await (
-        msgUpdate({ variables,	refetchQueries: [{ query: GET_MSG_LIST }] })
+        msgUpdate({ variables, refetchQueries: [{ query: GET_MSG_LIST }] })
       )
       setUserInput('')
       setIsEditItem(null)
@@ -43,14 +43,14 @@ const Todoapp = () => {
       const variables = {
         jobtodo: userInput
       }
-      await(
-      msgAdd({ variables,	refetchQueries: [{ query: GET_MSG_LIST }] })
+      await (
+        msgAdd({ variables, refetchQueries: [{ query: GET_MSG_LIST }] })
       )
       setUserInput('')
     }
   }
 
-async function toggleTodo(index){ 
+  async function toggleTodo (index) {
     data.msglist.find((items) => {
       return items.id === index.toggle
     })
@@ -59,7 +59,7 @@ async function toggleTodo(index){
         id: index.id,
         toggle: 1
       }
-      await(msgToggle({ variables }))
+      await (msgToggle({ variables }))
     } else {
       const variables = {
         id: index.id,
@@ -67,9 +67,9 @@ async function toggleTodo(index){
       }
       await (msgToggle({ variables }))
     }
-}
+  }
 
-async function editItem(index) {
+  async function editItem (index) {
     const variables = data.msglist.find((items) => {
       return items.id === index
     })
@@ -78,19 +78,19 @@ async function editItem(index) {
     setEditButton(true)
   }
 
-  async function deleteTodo(index){
+  async function deleteTodo (index) {
     const isConfirmed = window.confirm('Are You Sure want to Delete this item')
     if (isConfirmed) {
       const variables = data.msglist.find((items) => {
         return items.id === index
       })
-      await(
-      msgDelete({ variables, refetchQueries: [{ query: GET_MSG_LIST }] })
+      await (
+        msgDelete({ variables, refetchQueries: [{ query: GET_MSG_LIST }] })
       )
     }
   }
 
-// Returned Values
+  // Returned Values
   // console.log(data);
   if (error) return <div><h1>Cannot Fetch Data<br />Somthing went Wrong</h1></div>
   return (
@@ -98,14 +98,14 @@ async function editItem(index) {
       <div className='main-div'>
         <div className='child-div'>
           <figure>
-            <figcaption><a href='index.html'>Todo List <i className='fa-solid fa-list-check'></i></a></figcaption>
+            <figcaption><a href='index.html'>Todo List <i className='fa-solid fa-list-check' /></a></figcaption>
           </figure>
           <div className='addItems'>
             <form onSubmit={(event) => AddTodo(event)}>
               <input
                 className='form-control'
                 // autoFocus
-                ref={(input) => {input && input.focus() }}
+                ref={(input) => { input && input.focus() }}
                 type='text'
                 value={userInput}
                 placeholder='&#9997; Type Your Todo. . .'
@@ -131,7 +131,7 @@ async function editItem(index) {
                     <i className='far fa-trash-alt add-btn' onClick={() => deleteTodo(items.id)} />
                   </div>
                 </div>
-		))
+              ))
               : null};
           </div>
         </div>

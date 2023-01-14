@@ -7,7 +7,7 @@ const dbtodo = db.todoTable
 module.exports.MSG_LIST = {
   type: new GraphQLList(UserType),
   resolve: async (parent, args) => {
-    await(
+    await (
       data = dbtodo.findAll()
     )
     return data
