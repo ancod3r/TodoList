@@ -7,11 +7,11 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 
 ![To-do list Added](./support/Added-todos.png?raw=true)
 
-![To-do list Operations](./support/Operation-todos.png?raw=true)
+![To-do list Operations]((https://github.com/[TodoList]/blob/[master]/support/Home.png?raw=true)
 
 <p align="center">
-  <img src="./support/Operation-todos.png" width="350" title="hover text">
-  <img src="./support/Home.png" width="350" alt="accessibility text">
+  <img src="./support/Added-todos.png" width="350" alt="Added-todos" title="Added-todos">
+  <img src="./support/Operation-todos.png" width="350" alt="Operation-todos" title="Operations in todos">
 </p>
 
 ## Installation
