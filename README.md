@@ -25,7 +25,6 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 *Install Server*
 ```bash
 npm install todolist-graphql
-cd todolist-graphql
 nodemon server.js
 http://localhost:4000/graphql
 ```
