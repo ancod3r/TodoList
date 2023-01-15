@@ -54,7 +54,7 @@ To run this project, you will need to add the following environment variables to
   }
 }
 ```
-### Get Data of Single ID
+> Get Data of Single ID
 ```query{
   msgDetail(id:1){
     id,
@@ -63,7 +63,7 @@ To run this project, you will need to add the following environment variables to
   }
 }
 ```
-### Get Data of Single ID by passing ID as Query Variable in JSON format
+> Get Data of Single ID by passing ID as Query Variable in JSON format
 ```query($msgid:Int){
   msgDetail(id:$msgid){
     id,
@@ -86,7 +86,7 @@ Passing ID as Query Variable in JSON format
   }
 }
 ```
-### To Create using Query Variable
+> To Create using Query Variable
 ```mutation msgCreate($jobtodo: String!){
   msgCreate(jobtodo:$jobtodo){
     id,
@@ -110,7 +110,7 @@ Pass Query Variable
   }
 }
 ```
-#### To Update using Query Variable
+> To Update using Query Variable
 ```mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
 		toggle,
@@ -136,7 +136,7 @@ Pass Query Variable
   }
 }
 ```
-### To Delete using Query Variable
+> To Delete using Query Variable
 ```mutation msgDelete($id: Int!){
   msgDelete(id:$id){
     toggle,
@@ -159,7 +159,7 @@ id: 21
   }
 }
 ```
-### To Toggle Update using Query Variable
+> To Toggle Update using Query Variable
 ```mutation msgToggle($id: Int!, $toggle: Int!){
   msgToggle(id:$id, toggle:$toggle){
     id,
