@@ -1,33 +1,32 @@
 
-# TodoList Web Application
+# To-do List Web Application
 
-Todolist Web Application. Project made using NodeJS, Express, GraphQL, Apollo-Client, React, Sequelize ORM and MySQL, Here you can  Add todos, Update, Delete and Strikethrough todos,  All data are stored in MySQL Database for Persistence.
+To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-Client, React, Sequelize ORM and MySQL, Here you can  Add todos, Update, Delete and Strikethrough todos,  All data are stored in MySQL Database for Persistence.
 
 
 
 
 ## Installation
 
-Install todolist with npm
+Install To-do list with npm
 ```
-Xampp - https://www.apachefriends.org/download.html
-Nodejs - https://nodejs.org/en/download/
+[Download Xampp](https://www.apachefriends.org/download.html)
+[Nodejs](https://nodejs.org/en/download/)
 
 Start Xampp - Apache and MySQL
 Goto http://localhost/phpmyadmin/
 
 Create new database tododb
 ```
+Install Server
 ```bash
 npm install todolist-graphql
 cd todolist-graphql
-```
-```bash
 nodemon server.js
 http://localhost:4000/graphql
 ```
+Install To-do list Frontend
 ```
-Start todolist
 npm install todolist
 cd todolist
 npm start
@@ -49,7 +48,8 @@ http://localhost:4000/graphql
 query{
   msglist{
     id,
-    jobtodo
+    jobtodo,
+    toggle
   }
 }
 
@@ -57,7 +57,8 @@ query{
 query{
   msgDetail(id:1){
     id,
-	jobtodo
+	jobtodo,
+    toggle
   }
 }
 
@@ -66,7 +67,8 @@ query{
 query($msgid:Int){
   msgDetail(id:$msgid){
     id,
-	jobtodo
+	jobtodo,
+    toggle
   }
 }
 ##### Passing ID as Query Variable in JSON format
@@ -102,7 +104,7 @@ Pass Query Variable
 ##### To Update Data and show some message when data is Updated #####
 mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
-		success,
+		toggle,
 		message,
 		error
   }
@@ -110,7 +112,7 @@ mutation{
 ##### To Update using Query Variable
 mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
-		success,
+		toggle,
 		message,
 		error
   }
@@ -127,7 +129,7 @@ Pass Query Variable
 ##### To Delete Data on provided ID and show StatusType, some message like success, message etc. #####
 mutation{
   msgDelete(id:2){
-    success,
+    toggle,
     message,
     error
   }
@@ -136,7 +138,7 @@ mutation{
 ##### To Delete using Query Variable
 mutation msgDelete($id: Int!){
   msgDelete(id:$id){
-    success,
+    toggle,
     message
   }
 }
