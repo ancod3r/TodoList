@@ -44,7 +44,7 @@ To run this project, you will need to add the following environment variables to
 *To use GraphiQL Developer Tool*
 
 - http://localhost:4000/graphql
-\
+
 \
 \
 1. For Getting All Data form "tododb" Database
@@ -79,6 +79,7 @@ Passing ID as Query Variable in JSON format
     "msgid": 1
 }
 ```
+\
 \
 \
 2. To Create Data
