@@ -16,7 +16,7 @@ Install To-do list with [NodeJS](https://nodejs.org/en/download/)
 
 - Start [Xampp](https://www.apachefriends.org/download.html) - Apache and MySQL
 - Goto http://localhost/phpmyadmin/
-- Create new database "tododb"
+- Create new database *tododb*
 <br>
 
 
@@ -41,8 +41,7 @@ To run this project, you will need to add the following environment variables to
 
 *To use GraphiQL Developer Tool*
 
-- http://localhost:4000/graphql  
-
+- http://localhost:4000/graphql
 <br>
 
 
