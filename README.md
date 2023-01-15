@@ -14,10 +14,9 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 Install To-do list with [NodeJS](https://nodejs.org/en/download/)
 
 
-- Start [Xampp](https://www.apachefriends.org/download.html) - Apache and MySQL
+- Start [Xampp](https://www.apachefriends.org/download.html) - *Apache* and *MySQL*
 - Goto http://localhost/phpmyadmin/
 - Create new database *tododb*
-<br>
 
 
 *Install Server*
@@ -40,7 +39,7 @@ To run this project, you will need to add the following environment variables to
 
 *To use GraphiQL Developer Tool*
 
-- http://localhost:<Port>/graphql
+- http://localhost:[Port]/graphql
 <br>
 
 
