@@ -115,9 +115,9 @@ Pass Query Variable
 ```
 mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
-		toggle,
-		message,
-		error
+    toggle,
+    message,
+    error
   }
 }
 ```  
@@ -125,9 +125,9 @@ mutation{
 ```
 mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
-		toggle,
-		message,
-		error
+    toggle,
+    message,
+    error
   }
 }
 
@@ -171,9 +171,9 @@ id: 21
 ```
 mutation{
   msgToggle(id:1, toggle: 1){
-		toggle,
-		message,
-		error
+    toggle,
+    message,
+    error
   }
 }
 ```  
