@@ -43,8 +43,9 @@ To run this project, you will need to add the following environment variables to
 
 *To use GraphiQL Developer Tool*
 
-- http://localhost:4000/graphql
+- http://localhost:4000/graphql  
 
+\
 \
 \
 1. For Getting All Data form "tododb" Database
@@ -104,6 +105,7 @@ Pass Query Variable
 ```
 \
 \
+\
 3. To Update Data and show some message when data is Updated
 ```mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
@@ -130,6 +132,7 @@ Pass Query Variable
 ```
 \
 \
+\
 4. To Delete Data on provided ID and show StatusType, some message like success, message etc.
 ```mutation{
   msgDelete(id:2){
@@ -152,6 +155,7 @@ Pass Query Variable
 id: 21
 }
 ```
+\
 \
 \
 5. Get Toggle Data and show some message when data is Updated ####
