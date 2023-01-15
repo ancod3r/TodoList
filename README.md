@@ -11,6 +11,7 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 *Install To-do list with npm*
 
 *[Download Xampp](https://www.apachefriends.org/download.html)*
+
 *[Nodejs](https://nodejs.org/en/download/)*
 
 ```
