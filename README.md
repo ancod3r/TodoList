@@ -44,7 +44,7 @@ To run this project, you will need to add the following environment variables to
 *To use GraphiQL Developer Tool*
 
 - http://localhost:4000/graphql
-
+\
 1. For Getting All Data form "tododb" Database
 ```query{
   msglist{
@@ -54,6 +54,7 @@ To run this project, you will need to add the following environment variables to
   }
 }
 ```
+\
 > Get Data of Single ID
 ```query{
   msgDetail(id:1){
@@ -63,6 +64,7 @@ To run this project, you will need to add the following environment variables to
   }
 }
 ```
+\
 > Get Data of Single ID by passing ID as Query Variable in JSON format
 ```query($msgid:Int){
   msgDetail(id:$msgid){
@@ -77,8 +79,8 @@ Passing ID as Query Variable in JSON format
     "msgid": 1
 }
 ```
-
-
+\
+\
 2. To Create Data
 ```mutation{
   msgCreate(jobtodo:"1st Data Added"){
@@ -86,6 +88,7 @@ Passing ID as Query Variable in JSON format
   }
 }
 ```
+\
 > To Create using Query Variable
 ```mutation msgCreate($jobtodo: String!){
   msgCreate(jobtodo:$jobtodo){
@@ -99,8 +102,8 @@ Pass Query Variable
 	jobtodo:"New Msg Added"
 }
 ```
-
-
+\
+\
 3. To Update Data and show some message when data is Updated
 ```mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
@@ -110,6 +113,7 @@ Pass Query Variable
   }
 }
 ```
+\
 > To Update using Query Variable
 ```mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
@@ -125,8 +129,8 @@ Pass Query Variable
   "jobtodo": "3rd data Updated now"
 }
 ```
-
-
+\
+\
 4. To Delete Data on provided ID and show StatusType, some message like success, message etc.
 ```mutation{
   msgDelete(id:2){
@@ -136,6 +140,7 @@ Pass Query Variable
   }
 }
 ```
+\
 > To Delete using Query Variable
 ```mutation msgDelete($id: Int!){
   msgDelete(id:$id){
@@ -149,7 +154,8 @@ Pass Query Variable
 id: 21
 }
 ```
-
+\
+\
 5. Get Toggle Data and show some message when data is Updated ####
 ```mutation{
   msgToggle(id:1, toggle: 1){
@@ -159,6 +165,7 @@ id: 21
   }
 }
 ```
+\
 > To Toggle Update using Query Variable
 ```mutation msgToggle($id: Int!, $toggle: Int!){
   msgToggle(id:$id, toggle:$toggle){
