@@ -3,23 +3,23 @@
 
 To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-Client, React, Sequelize ORM and MySQL, Here you can  Add todos, Update, Delete and Strikethrough todos,  All data are stored in MySQL Database for Persistence.
 
-
+![To-do list Image](https://github.com/[rajneeshweb]/[TodoList]/Picture.png?raw=true)
 
 
 ## Installation
 
 *Install To-do list with npm*
 
-*[Download Xampp](https://www.apachefriends.org/download.html){:target="_blank"}*
+*[Download Xampp](https://www.apachefriends.org/download.html)*
 
-*[Nodejs](https://nodejs.org/en/download/){:target="_blank"}*
+*[Nodejs](https://nodejs.org/en/download/)*
 
-```
-Start Xampp - Apache and MySQL
-Goto http://localhost/phpmyadmin/
 
-Create new database tododb
-```
+- Start Xampp - Apache and MySQL
+- Goto http://localhost/phpmyadmin/
+
+- Create new database tododb
+
 *Install Server*
 ```bash
 npm install todolist-graphql
