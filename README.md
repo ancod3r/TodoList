@@ -24,7 +24,6 @@ Install To-do list with [NodeJS](https://nodejs.org/en/download/)
 ```bash
 npm install todolist-graphql
 nodemon server.js
-http://localhost:4000/graphql
 ```
 *Install To-do list*
 ```
@@ -35,13 +34,13 @@ npm start
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`Port=4000`
+`Port=5000`
 
 ## Usage/Examples
 
 *To use GraphiQL Developer Tool*
 
-- http://localhost:4000/graphql
+- http://localhost:<Port>/graphql
 <br>
 
 
