@@ -16,8 +16,7 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 - Create new database "tododb"
 <br>
 
-*Install To-do list with NodeJS*
-[NodeJS](https://nodejs.org/en/download/)
+*Install To-do list with [NodeJS](https://nodejs.org/en/download/)*
 
 *Install Server*
 ```bash
