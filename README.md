@@ -45,9 +45,8 @@ To run this project, you will need to add the following environment variables to
 
 - http://localhost:4000/graphql
 
-1. For Getting All Data form tododb
-```
-query{
+1. For Getting All Data form "tododb" Database
+```query{
   msglist{
     id,
     jobtodo,
@@ -55,26 +54,25 @@ query{
   }
 }
 ```
-For Getting Data of Single ID
-```
-query{
+### Get Data of Single ID
+```query{
   msgDetail(id:1){
     id,
-	  jobtodo,
+	jobtodo,
     toggle
   }
 }
 ```
-For Getting Data of Single ID, Same as Above Method, But Getting Data by passing ID as Query Variable in JSON format
-
+### Get Data of Single ID by passing ID as Query Variable in JSON format
 ```query($msgid:Int){
   msgDetail(id:$msgid){
     id,
-	  jobtodo,
+	jobtodo,
     toggle
   }
 }
-- Passing ID as Query Variable in JSON format
+
+Passing ID as Query Variable in JSON format
 {
     "msgid": 1
 }
@@ -82,21 +80,20 @@ For Getting Data of Single ID, Same as Above Method, But Getting Data by passing
 
 
 2. To Create Data
-```
-mutation{
+```mutation{
   msgCreate(jobtodo:"1st Data Added"){
 	jobtodo
   }
 }
 ```
-To Create using Query Variable
-```
-mutation msgCreate($jobtodo: String!){
+### To Create using Query Variable
+```mutation msgCreate($jobtodo: String!){
   msgCreate(jobtodo:$jobtodo){
     id,
     jobtodo
   }
 }
+
 Pass Query Variable
 {
 	jobtodo:"New Msg Added"
@@ -105,8 +102,7 @@ Pass Query Variable
 
 
 3. To Update Data and show some message when data is Updated
-```
-mutation{
+```mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
 		toggle,
 		message,
@@ -115,14 +111,14 @@ mutation{
 }
 ```
 #### To Update using Query Variable
-```
-mutation msgUpdate($id: Int!, $jobtodo: String!){
+```mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
 		toggle,
 		message,
 		error
   }
 }
+
 Pass Query Variable
 {
   "id": 3,
@@ -132,8 +128,7 @@ Pass Query Variable
 
 
 4. To Delete Data on provided ID and show StatusType, some message like success, message etc.
-```
-mutation{
+```mutation{
   msgDelete(id:2){
     toggle,
     message,
@@ -141,13 +136,14 @@ mutation{
   }
 }
 ```
-##### To Delete using Query Variable
-mutation msgDelete($id: Int!){
+### To Delete using Query Variable
+```mutation msgDelete($id: Int!){
   msgDelete(id:$id){
     toggle,
     message
   }
 }
+
 Pass Query Variable
 {
 id: 21
@@ -155,8 +151,7 @@ id: 21
 ```
 
 5. Get Toggle Data and show some message when data is Updated ####
-```
-mutation{
+```mutation{
   msgToggle(id:1, toggle: 1){
 		toggle,
 		message,
@@ -164,14 +159,14 @@ mutation{
   }
 }
 ```
-##### To Toggle Update using Query Variable
-```
-mutation msgToggle($id: Int!, $toggle: Int!){
+### To Toggle Update using Query Variable
+```mutation msgToggle($id: Int!, $toggle: Int!){
   msgToggle(id:$id, toggle:$toggle){
     id,
     toggle
   }
 }
+
 Pass Query Variable
 {
   "id": 1,
