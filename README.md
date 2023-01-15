@@ -30,7 +30,6 @@ http://localhost:4000/graphql
 *Install To-do list frontend*
 ```
 npm install todolist
-cd todolist
 npm start
 ```
 ## Environment Variables
