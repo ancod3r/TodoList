@@ -45,7 +45,7 @@ To run this project, you will need to add the following environment variables to
 
 - http://localhost:4000/graphql  
 
-\
+<br>
 \
 \
 1. For Getting All Data form "tododb" Database
@@ -133,7 +133,7 @@ Pass Query Variable
 \
 \
 \
-4. To Delete Data on provided ID and show StatusType, some message like success, message etc.
+4. To Delete Data on provided ID and show StatusType, some message etc.
 ```mutation{
   msgDelete(id:2){
     toggle,
