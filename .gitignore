@@ -3,7 +3,6 @@
 # dependencies
 
 server/node_modules/
-server/package-lock.json
 todolist/node_modules/
 /node_modules
 /.pnp
