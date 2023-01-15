@@ -46,6 +46,7 @@ To run this project, you will need to add the following environment variables to
 - http://localhost:4000/graphql
 \
 \
+\
 1. For Getting All Data form "tododb" Database
 ```query{
   msglist{
@@ -54,8 +55,7 @@ To run this project, you will need to add the following environment variables to
     toggle
   }
 }
-```
-  
+```  
 > Get Data of Single ID
 ```query{
   msgDetail(id:1){
@@ -64,8 +64,7 @@ To run this project, you will need to add the following environment variables to
     toggle
   }
 }
-```
-  
+```  
 > Get Data of Single ID by passing ID as Query Variable in JSON format
 ```query($msgid:Int){
   msgDetail(id:$msgid){
@@ -88,8 +87,7 @@ Passing ID as Query Variable in JSON format
 	jobtodo
   }
 }
-```
-  
+```  
 > To Create using Query Variable
 ```mutation msgCreate($jobtodo: String!){
   msgCreate(jobtodo:$jobtodo){
@@ -113,8 +111,7 @@ Pass Query Variable
 		error
   }
 }
-```
-  
+```  
 > To Update using Query Variable
 ```mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
@@ -140,8 +137,7 @@ Pass Query Variable
     error
   }
 }
-```
-  
+```  
 > To Delete using Query Variable
 ```mutation msgDelete($id: Int!){
   msgDelete(id:$id){
@@ -165,8 +161,7 @@ id: 21
 		error
   }
 }
-```
-  
+```  
 > To Toggle Update using Query Variable
 ```mutation msgToggle($id: Int!, $toggle: Int!){
   msgToggle(id:$id, toggle:$toggle){
