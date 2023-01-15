@@ -158,7 +158,7 @@ id: 21
 \
 \
 \
-5. Get Toggle Data and show some message when data is Updated ####
+5. Get Toggle Data and show some message when data is Updated
 ```mutation{
   msgToggle(id:1, toggle: 1){
 		toggle,
