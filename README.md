@@ -3,12 +3,14 @@
 
 To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-Client, React, Sequelize ORM and MySQL, Here you can  Add todos, Update, Delete and Strikethrough todos,  All data are stored in MySQL Database for Persistence.
 
-![To-do list Home](./support/Home.png?raw=true)
 <!-- ![To-do list Operations](https://github.com/TodoList/blob/master/support/Home.png?raw=true) -->
+![To-do list Home](./support/Home.png?raw=true)
+<!-- ![To-do list Added-todos](./support/Added-todos.png?raw=true) -->
+<!-- ![To-do list Operation-todos](./support/Operation-todos.png?raw=true) -->
 
 <p align="center">
-  <img src="./support/Added-todos.png" width="500" alt="Added-todos" title="Added-todos">
-  <img src="./support/Operation-todos.png" width="500" alt="Operation-todos" title="Operations in todos">
+  <img src="./support/Added-todos.png" width="1080" alt="Added-todos" title="Added-todos">
+  <img src="./support/Operation-todos.png" width="1080" alt="Operation-todos" title="Operations in todos">
 </p>
 
 ## Installation
