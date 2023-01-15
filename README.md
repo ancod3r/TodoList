@@ -10,12 +10,12 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 
 ## Installation
 
-- *[Download Xampp](https://www.apachefriends.org/download.html)*
+*[Download Xampp](https://www.apachefriends.org/download.html)*
 - Start Xampp - Apache and MySQL
 - Goto http://localhost/phpmyadmin/
 - Create new database tododb
-
-
+\
+\
 *Install To-do list with npm*
 - *[Nodejs](https://nodejs.org/en/download/)*
 
