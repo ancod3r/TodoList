@@ -9,22 +9,25 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 ## Installation
 
 Install To-do list with npm
-[!Download Xampp](https://www.apachefriends.org/download.html)
-[!Nodejs](https://nodejs.org/en/download/)
+
+[Download Xampp](https://www.apachefriends.org/download.html)
+
+[Nodejs](https://nodejs.org/en/download/)
+
 ```
 Start Xampp - Apache and MySQL
 Goto http://localhost/phpmyadmin/
 
 Create new database tododb
 ```
-Install Server
+*Install Server*
 ```bash
 npm install todolist-graphql
 cd todolist-graphql
 nodemon server.js
 http://localhost:4000/graphql
 ```
-Install To-do list Frontend
+*Install To-do list frontend*
 ```
 npm install todolist
 cd todolist
