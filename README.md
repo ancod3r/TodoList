@@ -42,11 +42,11 @@ To run this project, you will need to add the following environment variables to
 
 ## Usage/Examples
 
+*To use GraphiQL Developer Tool*
+
+- http://localhost:4000/graphql
+
 ```
-To use GraphiQL Developer tool
-
-http://localhost:4000/graphql
-
 ##### For Getting All Data form tododb #####
 query{
   msglist{
@@ -60,7 +60,7 @@ query{
 query{
   msgDetail(id:1){
     id,
-	jobtodo,
+	  jobtodo,
     toggle
   }
 }
@@ -70,7 +70,7 @@ query{
 query($msgid:Int){
   msgDetail(id:$msgid){
     id,
-	jobtodo,
+	  jobtodo,
     toggle
   }
 }
