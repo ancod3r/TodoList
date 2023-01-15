@@ -10,9 +10,9 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 
 *Install To-do list with npm*
 
-*[Download Xampp](https://www.apachefriends.org/download.html)*
+*[Download Xampp](https://www.apachefriends.org/download.html){:target="_blank"}*
 
-*[Nodejs](https://nodejs.org/en/download/)*
+*[Nodejs](https://nodejs.org/en/download/){:target="_blank"}*
 
 ```
 Start Xampp - Apache and MySQL
