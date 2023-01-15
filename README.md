@@ -89,7 +89,7 @@ mutation{
   }
 }
 ```  
-> To Create using Query Variable
+> To Create using query variable
 ```
 mutation msgCreate($jobtodo: String!){
   msgCreate(jobtodo:$jobtodo){
