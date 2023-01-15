@@ -43,7 +43,7 @@ To run this project, you will need to add the following environment variables to
 <br>
 
 
-1. For Getting All Data form "tododb" Database
+1. For getting all Data from *tododb* database
 ```
 query{
   msglist{
@@ -53,7 +53,7 @@ query{
   }
 }
 ```  
-> Get Data of Single ID
+> Get data of single ID
 ```
 query{
   msgDetail(id:1){
@@ -63,7 +63,7 @@ query{
   }
 }
 ```  
-> Get Data of Single ID by passing ID as Query Variable in JSON format
+> Get data of single ID by passing ID as *query* variable in *JSON* format
 ```
 query($msgid:Int){
   msgDetail(id:$msgid){
@@ -73,7 +73,7 @@ query($msgid:Int){
   }
 }
 
-Passing ID as Query Variable in JSON format
+Passing ID as query variable in json format
 {
     "msgid": 1
 }
@@ -81,7 +81,7 @@ Passing ID as Query Variable in JSON format
 \
 \
 \
-2. To Create Data
+2. To Create/Add Data
 ```
 mutation{
   msgCreate(jobtodo:"1st Data Added"){
@@ -98,7 +98,7 @@ mutation msgCreate($jobtodo: String!){
   }
 }
 
-Pass Query Variable
+Pass query variable
 {
 	jobtodo:"New Msg Added"
 }
@@ -106,7 +106,7 @@ Pass Query Variable
 \
 \
 \
-3. To Update Data and show some message when data is Updated
+3. To Update Data and show some message when the data is Updated
 ```
 mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
@@ -116,7 +116,7 @@ mutation{
   }
 }
 ```  
-> To Update using Query Variable
+> To Update using query variable
 ```
 mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
@@ -126,7 +126,7 @@ mutation msgUpdate($id: Int!, $jobtodo: String!){
   }
 }
 
-Pass Query Variable
+Pass query variable
 {
   "id": 3,
   "jobtodo": "3rd data Updated now"
@@ -145,7 +145,7 @@ mutation{
   }
 }
 ```  
-> To Delete using Query Variable
+> To Delete using query variable
 ```
 mutation msgDelete($id: Int!){
   msgDelete(id:$id){
@@ -154,7 +154,7 @@ mutation msgDelete($id: Int!){
   }
 }
 
-Pass Query Variable
+Pass query variable
 {
 id: 21
 }
@@ -172,7 +172,7 @@ mutation{
   }
 }
 ```  
-> To Toggle Update using Query Variable
+> To Toggle Update using query variable
 ```
 mutation msgToggle($id: Int!, $toggle: Int!){
   msgToggle(id:$id, toggle:$toggle){
@@ -181,7 +181,7 @@ mutation msgToggle($id: Int!, $toggle: Int!){
   }
 }
 
-Pass Query Variable
+Pass query variable
 {
   "id": 1,
   "toggle": 1
