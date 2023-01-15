@@ -49,7 +49,8 @@ To run this project, you will need to add the following environment variables to
 
 
 1. For Getting All Data form "tododb" Database
-```query{
+```
+query{
   msglist{
     id,
     jobtodo,
@@ -58,19 +59,21 @@ To run this project, you will need to add the following environment variables to
 }
 ```  
 > Get Data of Single ID
-```query{
+```
+query{
   msgDetail(id:1){
     id,
-	jobtodo,
+    jobtodo,
     toggle
   }
 }
 ```  
 > Get Data of Single ID by passing ID as Query Variable in JSON format
-```query($msgid:Int){
+```
+query($msgid:Int){
   msgDetail(id:$msgid){
     id,
-	jobtodo,
+    jobtodo,
     toggle
   }
 }
@@ -84,14 +87,16 @@ Passing ID as Query Variable in JSON format
 \
 \
 2. To Create Data
-```mutation{
+```
+mutation{
   msgCreate(jobtodo:"1st Data Added"){
 	jobtodo
   }
 }
 ```  
 > To Create using Query Variable
-```mutation msgCreate($jobtodo: String!){
+```
+mutation msgCreate($jobtodo: String!){
   msgCreate(jobtodo:$jobtodo){
     id,
     jobtodo
@@ -107,7 +112,8 @@ Pass Query Variable
 \
 \
 3. To Update Data and show some message when data is Updated
-```mutation{
+```
+mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
 		toggle,
 		message,
@@ -116,7 +122,8 @@ Pass Query Variable
 }
 ```  
 > To Update using Query Variable
-```mutation msgUpdate($id: Int!, $jobtodo: String!){
+```
+mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
 		toggle,
 		message,
@@ -134,7 +141,8 @@ Pass Query Variable
 \
 \
 4. To Delete Data on provided ID and show StatusType, some message etc.
-```mutation{
+```
+mutation{
   msgDelete(id:2){
     toggle,
     message,
@@ -143,7 +151,8 @@ Pass Query Variable
 }
 ```  
 > To Delete using Query Variable
-```mutation msgDelete($id: Int!){
+```
+mutation msgDelete($id: Int!){
   msgDelete(id:$id){
     toggle,
     message
@@ -159,7 +168,8 @@ id: 21
 \
 \
 5. Get Toggle Data and show some message when data is Updated
-```mutation{
+```
+mutation{
   msgToggle(id:1, toggle: 1){
 		toggle,
 		message,
@@ -168,7 +178,8 @@ id: 21
 }
 ```  
 > To Toggle Update using Query Variable
-```mutation msgToggle($id: Int!, $toggle: Int!){
+```
+mutation msgToggle($id: Int!, $toggle: Int!){
   msgToggle(id:$id, toggle:$toggle){
     id,
     toggle
