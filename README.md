@@ -9,6 +9,10 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 
 ![To-do list Operations](./support/Operation-todos.png?raw=true)
 
+<p align="center">
+  <img src="./support/Operation-todos.png" width="350" title="hover text">
+  <img src="./support/Home.png" width="350" alt="accessibility text">
+</p>
 
 ## Installation
 
