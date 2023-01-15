@@ -19,7 +19,6 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 
 - Start Xampp - Apache and MySQL
 - Goto http://localhost/phpmyadmin/
-
 - Create new database tododb
 
 *Install Server*
@@ -46,8 +45,8 @@ To run this project, you will need to add the following environment variables to
 
 - http://localhost:4000/graphql
 
+1. For Getting All Data form tododb
 ```
-##### For Getting All Data form tododb #####
 query{
   msglist{
     id,
@@ -55,8 +54,9 @@ query{
     toggle
   }
 }
-
-##### For Getting Data of Single ID #####
+```
+For Getting Data of Single ID
+```
 query{
   msgDetail(id:1){
     id,
@@ -64,32 +64,33 @@ query{
     toggle
   }
 }
+```
+For Getting Data of Single ID, Same as Above Method, But Getting Data by passing ID as Query Variable in JSON format
 
-##### For Getting Data of Single ID, Same as Above Method #####
-##### But Getting Data by passing ID as Query Variable in JSON format #####
-query($msgid:Int){
+```query($msgid:Int){
   msgDetail(id:$msgid){
     id,
 	  jobtodo,
     toggle
   }
 }
-##### Passing ID as Query Variable in JSON format
+- Passing ID as Query Variable in JSON format
 {
     "msgid": 1
 }
+```
 
 
-
-
-##### To Create Data #####
+2. To Create Data
+```
 mutation{
   msgCreate(jobtodo:"1st Data Added"){
 	jobtodo
   }
 }
-
-##### To Create using Query Variable
+```
+To Create using Query Variable
+```
 mutation msgCreate($jobtodo: String!){
   msgCreate(jobtodo:$jobtodo){
     id,
@@ -100,11 +101,11 @@ Pass Query Variable
 {
 	jobtodo:"New Msg Added"
 }
+```
 
 
-
-
-##### To Update Data and show some message when data is Updated #####
+3. To Update Data and show some message when data is Updated
+```
 mutation{
   msgUpdate(id:1, jobtodo:"1st Data Updated Modified"){
 		toggle,
@@ -112,7 +113,9 @@ mutation{
 		error
   }
 }
-##### To Update using Query Variable
+```
+#### To Update using Query Variable
+```
 mutation msgUpdate($id: Int!, $jobtodo: String!){
   msgUpdate(id:$id, jobtodo:$jobtodo){
 		toggle,
@@ -125,11 +128,11 @@ Pass Query Variable
   "id": 3,
   "jobtodo": "3rd data Updated now"
 }
+```
 
 
-
-
-##### To Delete Data on provided ID and show StatusType, some message like success, message etc. #####
+4. To Delete Data on provided ID and show StatusType, some message like success, message etc.
+```
 mutation{
   msgDelete(id:2){
     toggle,
@@ -137,7 +140,7 @@ mutation{
     error
   }
 }
-
+```
 ##### To Delete using Query Variable
 mutation msgDelete($id: Int!){
   msgDelete(id:$id){
@@ -149,11 +152,10 @@ Pass Query Variable
 {
 id: 21
 }
+```
 
-
-
-
-#### Get Toggle Data and show some message when data is Updated ####
+5. Get Toggle Data and show some message when data is Updated ####
+```
 mutation{
   msgToggle(id:1, toggle: 1){
 		toggle,
@@ -161,8 +163,9 @@ mutation{
 		error
   }
 }
-
+```
 ##### To Toggle Update using Query Variable
+```
 mutation msgToggle($id: Int!, $toggle: Int!){
   msgToggle(id:$id, toggle:$toggle){
     id,
