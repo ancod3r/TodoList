@@ -5,10 +5,10 @@ const dotenv = require('dotenv')
 const schema = require('./schema/index')
 const app = express()
 require('./models')
-// const PORT = 4000
+const PORT = 4000
 app.use(express.json())
-dotenv.config({ path: './config.env' })
-const PORT = process.env.PORT || 4000
+// dotenv.config({ path: './config.env' })
+// const PORT = process.env.PORT || 4000
 
 app.use(
   '/graphql', graphqlHTTP({
