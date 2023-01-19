@@ -1,63 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-body {
-	margin: 0;
-	/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-	  sans-serif; */
-	font-family: "Trebuchet MS", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  }
-  
-code {
-	/* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
-	font-family: "Trebuchet MS", sans-serif;
-  }
 
-  * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Source Sans Pro", sans-serif;
-  }
+}
 
-  html {
+html {
 	font-size: 62.5%;
-  }
-  
-  .main-div {
+}
+
+.main-div {
 	min-height: 100vh;
 	/* background: #060822; */
 	display: flex;
 	justify-content: center;
 	/* align-items: center; */
-  }
-  
-  .child-div {
+}
+
+.child-div {
 	text-align: center;
 	margin-top: 5rem;
-  }
-  
-  /* .child-div figure .fa-solid {
+}
+
+/* .child-div figure .fa-solid {
 	width: 10rem;
-  font-size: 10rem;
+font-size: 10rem;
 	height: 8rem;
   } */
 
-  a{
-    color: inherit;
-    text-decoration: none;
+a {
+	color: inherit;
+	text-decoration: none;
 	font-weight: 900;
-  }
-  
-  .child-div figure figcaption {
+}
+
+.child-div figure figcaption {
 	color: #fff;
 	font-size: 5rem;
 	padding-top: 2rem;
 	text-transform: capitalize;
-  }
-  
-  input {
+}
+
+input {
 	/* display: block; */
 	min-width: 40rem;
 	height: 3.4rem;
@@ -73,34 +59,36 @@ code {
 	-webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
 	box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
 	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  }
-  
-  input,
-  input:focus,
-  input:active,
-  input:active:focus {
+}
+
+input,
+input:focus,
+input:active,
+input:active:focus {
 	border: none;
 	padding: 2.3rem 4rem 2.3rem 1.5rem;
 	outline: none;
-  }
-  input {
+}
+
+input {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	-webkit-transition: all 0.2s linear;
 	transition: all 0.2s linear;
-  }
-  input:focus {
+}
+
+input:focus {
 	-webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-  }
-  
-  .todo-btn {
+}
+
+.todo-btn {
 	width: 4rem;
 	display: flex;
 	justify-content: space-around;
-  }
-  
-  .fa {
+}
+
+.fa {
 	margin-left: -2.5rem;
 	cursor: pointer;
 	pointer-events: auto;
@@ -111,22 +99,23 @@ code {
 	-webkit-transition: color 0.15s linear;
 	transition: color 0.15s linear;
 	font-size: 2rem;
-  }
-  .fa:hover {
+}
+
+.fa:hover {
 	color: rgb(47, 214, 122);
-  }
-  
-  .fa-plus:before {
+}
+
+.fa-plus:before {
 	content: "\f067";
 	font-size: 1.5rem;
-  }
-  
-  .showItems {
+}
+
+.showItems {
 	margin-top: 3rem;
 	text-align: center;
-  }
-  
-  .eachItem {
+}
+
+.eachItem {
 	background: #fff;
 	padding: 1.2rem 1rem;
 	border-radius: 0.5rem;
@@ -138,28 +127,28 @@ code {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  }
-  
-  .eachItem:hover {
+}
+
+.eachItem:hover {
 	background: rgb(249, 249, 252);
 	color: rgb(85, 41, 220);
-  }
-  
-  .showItems .eachItem h3 {
+}
+
+.showItems .eachItem h3 {
 	padding-left: 1rem;
 	padding-right: 3rem;
 	font-size: 1.6rem;
 	color: #fff;
-  }
-  
-  .strike {
+}
+
+.strike {
 	text-decoration-color: #ff0000aa;
 	text-decoration-thickness: 2px;
-  }
+}
 
-  .fa-check-square,
-  .fa-trash-alt,
-  .fa-edit {
+.fa-check-square,
+.fa-trash-alt,
+.fa-edit {
 	/* margin-left: -2.5rem; */
 	cursor: pointer;
 	pointer-events: auto;
@@ -168,33 +157,33 @@ code {
 	-webkit-transition: color 0.15s linear;
 	transition: color 0.15s linear;
 	font-size: 2rem;
-  }
-  
-  .addItems .fa-edit {
-	color: rgb(47, 214, 122);
-  }
-  
-  .fa-edit {
-	margin-left: -3.5rem;
-  }
-  
-  .eachItem:hover .fa-trash-alt {
-	color: rgb(214, 47, 61);
-  }
-  
-  .eachItem:hover .fa-check-square {
-	color: rgb(255, 123, 0);
-  }
+}
 
-  .eachItem:hover .fa-edit {
+.addItems .fa-edit {
+	color: rgb(47, 214, 122);
+}
+
+.fa-edit {
+	margin-left: -3.5rem;
+}
+
+.eachItem:hover .fa-trash-alt {
+	color: rgb(214, 47, 61);
+}
+
+.eachItem:hover .fa-check-square {
+	color: rgb(255, 123, 0);
+}
+
+.eachItem:hover .fa-edit {
 	color: rgb(100, 214, 47);
-  }
-  
-  .eachItem:hover h3 {
+}
+
+.eachItem:hover h3 {
 	color: rgb(85, 41, 220);
-  }
-  
-  .btn {
+}
+
+.btn {
 	letter-spacing: 0.1em;
 	cursor: pointer;
 	font-size: 14px;
@@ -205,12 +194,13 @@ code {
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 100%;
-  }
-  .btn:hover {
+}
+
+.btn:hover {
 	text-decoration: none;
-  }
-  
-  .effect04 {
+}
+
+.effect04 {
 	--uismLinkDisplay: var(--smLinkDisplay, inline-flex);
 	display: var(--uismLinkDisplay);
 	color: #000;
@@ -218,25 +208,25 @@ code {
 	position: relative;
 	transition-duration: 0.4s;
 	overflow: hidden;
-  }
-  
-  .effect04::before,
-  .effect04 span {
+}
+
+.effect04::before,
+.effect04 span {
 	margin: 0 auto;
 	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 	transition-duration: 0.4s;
-  }
-  
-  .effect04:hover {
+}
+
+.effect04:hover {
 	background-color: rgb(85, 41, 220);
-  }
-  
-  .effect04:hover span {
+}
+
+.effect04:hover span {
 	-webkit-transform: translateY(-400%) scale(-0.1, 20);
 	transform: translateY(-400%) scale(-0.1, 20);
-  }
-  
-  .effect04::before {
+}
+
+.effect04::before {
 	content: attr(data-sm-link-text);
 	color: #fff;
 	position: absolute;
@@ -245,11 +235,10 @@ code {
 	margin: auto;
 	-webkit-transform: translateY(500%) scale(-0.1, 20);
 	transform: translateY(500%) scale(-0.1, 20);
-  }
-  
-  .effect04:hover::before {
+}
+
+.effect04:hover::before {
 	letter-spacing: 0.05em;
 	-webkit-transform: translateY(0) scale(1, 1);
 	transform: translateY(0) scale(1, 1);
-  }
-  
+}
