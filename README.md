@@ -25,6 +25,7 @@ Install To-do list with [NodeJS](https://nodejs.org/en/download/)
 *Install Server*
 ```bash
 cd server/
+npm install -g nodemon
 npm install todolist-graphql
 nodemon server.js
 ```
