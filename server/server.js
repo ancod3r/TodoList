@@ -6,7 +6,9 @@ const schema = require('./schema/index')
 const app = express()
 require('./models')
 // const PORT = 4000
-app.use(express.json())
+app.use(express.json({limit: "4096mb", extended: true}))  //{limit: "10mb", extended: true} Added to fix ERROR:request entity too large
+app.use(express.urlencoded({limit: "4096mb", extended: true, parameterLimit: 4294967295}))
+
 dotenv.config({ path: '../config.env' })
 const PORT = process.env.PROXY_PORT || 5000
 
