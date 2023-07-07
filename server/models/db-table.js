@@ -8,15 +8,22 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true
     },
     jobtodo: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(4294967295),
       allowNull: false
     },
     toggle: {
       type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 0
-    }
-
+    },
+    // default values for dates => current time
+    // myDate: { type: DataTypes.DATE, 
+    //         defaultValue: DataTypes.NOW(),
+    //         allowNull: false
+    //         },
+     // Timestamps
+     createdAt: DataTypes.DATE,
+     updatedAt: DataTypes.DATE
   })
   return todoTable
 }
