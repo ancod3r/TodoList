@@ -3,7 +3,9 @@ const Sequelize = require('sequelize')
 const sequelize = new Sequelize('tododb', 'root', '', {
   host: 'localhost',
   dialect: 'mysql',
-  define: { timestamps: false },
+  timezone: '+05:30',
+  dialectOptions: {},
+  define: { timestamps: true },
   // logging: console.log
   logging: false
 })
