@@ -9,7 +9,7 @@ Todo-list Web Application made using NodeJS, Express, React, MySQL, GraphQL, Apo
     <img src="https://github.com/ancod3r/TodoList/blob/master/support/Added-todos.png" width="800">
     <img src="https://github.com/ancod3r/TodoList/blob/master/support/Operations-in-todos.png" width="800">
 </p>
-<!-- ![To-do list Operations](https://github.com/TodoList/blob/master/support/Home.png?raw=true) -->
+<!-- ![To-do list Home](https://github.com/ancod3r/TodoList/blob/master/support/Home.png?raw=true) -->
 <!-- ![To-do list Home](./support/Home.png?raw=true "Homepage") -->
 <!-- ![To-do list Added-todos](./support/Added-todos.png?raw=true "Added Todos") -->
 <!-- ![To-do list Operations-in-todos](./support/Operations-in-todos.png?raw=true "Operations in Todos") -->
@@ -20,17 +20,17 @@ Install [NodeJS](https://nodejs.org/en/download/)
 
 - Start [Xampp](https://www.apachefriends.org/download.html) - *Apache* and *MySQL*
 - Goto http://localhost/phpmyadmin/
-- Create new database *tododb*
+- Create database *tododb*
 
 
-*Install Server*
+*Install todo list Server files*
 ```bash
 cd server/
 npm install -g nodemon
 npm install
 nodemon server.js
 ```
-*Install To-do list*
+*Install Todo list*
 ```
 cd todolist/
 npm install
