@@ -4,12 +4,14 @@ Todo-list Web Application made using NodeJS, Express, React, MySQL, GraphQL, Apo
 
 ## Screenshots:
 
-<p float="center">
+<!-- <p float="center">
     <img src="https://github.com/ancod3r/TodoList/blob/master/support/Home.png" width="800">
     <img src="https://github.com/ancod3r/TodoList/blob/master/support/Added-todos.png" width="800">
     <img src="https://github.com/ancod3r/TodoList/blob/master/support/Operations-in-todos.png" width="800">
-</p>
-<!-- ![To-do list Home](https://github.com/ancod3r/TodoList/blob/master/support/Home.png?raw=true) -->
+</p> -->
+![Todo list Home](https://github.com/ancod3r/TodoList/blob/master/support/Home.png?raw=true)
+![Todo list Added Todo](https://github.com/ancod3r/TodoList/blob/master/support/Added-todos.png?raw=true)
+![Todo list Operations in Todo](https://github.com/ancod3r/TodoList/blob/master/support/Operations-in-todos.png?raw=true)
 <!-- ![To-do list Home](./support/Home.png?raw=true "Homepage") -->
 <!-- ![To-do list Added-todos](./support/Added-todos.png?raw=true "Added Todos") -->
 <!-- ![To-do list Operations-in-todos](./support/Operations-in-todos.png?raw=true "Operations in Todos") -->
@@ -23,7 +25,7 @@ Install [NodeJS](https://nodejs.org/en/download/)
 - Create database *tododb*
 
 
-*Install todo list Server files*
+*Install Todo list Server files*
 ```bash
 cd server/
 npm install -g nodemon
