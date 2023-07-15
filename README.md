@@ -5,9 +5,9 @@ Todo-list Web Application made using NodeJS, Express, React, MySQL, GraphQL, Apo
 ## Screenshots:
 
 <p float="center">
-    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Home.png" width="600">
-    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Added-todos.png" width="600">
-    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Operations-in-todos.png" width="600">
+    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Home.png" width="800">
+    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Added-todos.png" width="800">
+    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Operations-in-todos.png" width="800">
 </p>
 <!-- ![To-do list Operations](https://github.com/TodoList/blob/master/support/Home.png?raw=true) -->
 <!-- ![To-do list Home](./support/Home.png?raw=true "Homepage") -->
