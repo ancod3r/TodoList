@@ -6,9 +6,9 @@ const sequelize = new Sequelize('tododb', 'root', '', {
   timezone: '+05:30',
   dialectOptions: {},
   define: { timestamps: true },
-  // logging: console.log
+  //logging: console.log
   logging: false
-})
+});
 
 sequelize.authenticate()
   .then(() => {

@@ -16,7 +16,7 @@ html {
 	/* background: #060822; */
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
+	 /*align-items: center; */
 }
 
 .child-div {
@@ -66,7 +66,7 @@ input:focus,
 input:active,
 input:active:focus {
 	border: none;
-	padding: 2.3rem 4rem 2.3rem 1.5rem;
+	padding: 2.3rem 5rem 2.3rem 1.5rem;
 	outline: none;
 }
 
@@ -83,7 +83,7 @@ input:focus {
 }
 
 .todo-btn {
-	width: 4rem;
+	width: 4.5rem;
 	display: flex;
 	justify-content: space-around;
 }
@@ -121,9 +121,11 @@ input:focus {
 	border-radius: 0.5rem;
 	margin-bottom: 0.7rem;
 	margin-left: 1rem;
+	/*margin-right: 1rem;*/
 	min-width: 40rem;
 	word-break: break-word;
-	background: rgb(85, 41, 220);
+	/*background: rgb(85, 41, 220);*/
+	background-image: linear-gradient(to right, #8e2de2, #4a00e0);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -136,7 +138,7 @@ input:focus {
 
 .showItems .eachItem h3 {
 	padding-left: 1rem;
-	padding-right: 3rem;
+	padding-right: 4rem;
 	font-size: 1.6rem;
 	color: #fff;
 }
@@ -182,7 +184,7 @@ input:focus {
 .eachItem:hover h3 {
 	color: rgb(85, 41, 220);
 }
-
+/*
 .btn {
 	letter-spacing: 0.1em;
 	cursor: pointer;
@@ -241,4 +243,14 @@ input:focus {
 	letter-spacing: 0.05em;
 	-webkit-transform: translateY(0) scale(1, 1);
 	transform: translateY(0) scale(1, 1);
+}
+*/
+.footer{
+	color: rgb(255, 255, 255);
+	font-size: 1.6rem;
+    clear: both;
+    font-weight: bold;
+}
+.footer span{
+	color:#ff0000;
 }

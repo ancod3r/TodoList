@@ -134,6 +134,7 @@ const Todoapp = () => {
               ))
               : null};
           </div>
+          <span className="footer">Made with <span>&#10084;</span> by Ancod3r</span>
         </div>
       </div>
     </>

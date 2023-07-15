@@ -20,6 +20,12 @@
     "sequelize": "^6.21.3",
     "sequelize-cli": "^6.4.1"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "devDependencies": {
     "standard": "*"
   }

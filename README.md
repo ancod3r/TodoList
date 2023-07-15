@@ -1,7 +1,6 @@
+# Todo List Web Application
 
-# To-Do List Web Application
-
-To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-Client, React, Sequelize ORM and MySQL, Here you can  Add todos, Update, Delete and Strikethrough todos,  All the data are stored in MySQL Database.
+Todo-list Web Application made using NodeJS, Express, React, MySQL, GraphQL, Apollo-Client, Sequelize ORM, Here you can Add todo, Update, Delete and Strikethrough, All the data are stored in MySQL Database.
 
 <br>
 
@@ -9,12 +8,12 @@ To-do list Web Application. Project made using NodeJS, Express, GraphQL, Apollo-
 <!-- ![To-do list Operations](https://github.com/TodoList/blob/master/support/Home.png?raw=true) -->
 ![To-do list Home](./support/Home.png?raw=true "Homepage")
 ![To-do list Added-todos](./support/Added-todos.png?raw=true "Added Todos")
-![To-do list Operation-in-todos](./support/Operation-in-todos.png?raw=true "Operation in Todos")
+![To-do list Operations-in-todos](./support/Operations-in-todos.png?raw=true "Operations in Todos")
 
 ## Installation
 
 
-Install To-do list with [NodeJS](https://nodejs.org/en/download/)
+Install [NodeJS](https://nodejs.org/en/download/)
 
 
 - Start [Xampp](https://www.apachefriends.org/download.html) - *Apache* and *MySQL*
@@ -26,13 +25,13 @@ Install To-do list with [NodeJS](https://nodejs.org/en/download/)
 ```bash
 cd server/
 npm install -g nodemon
-npm install todolist-graphql
+npm install
 nodemon server.js
 ```
 *Install To-do list*
 ```
 cd todolist/
-npm install todolist
+npm install
 npm start
 ```
 ## Environment Variables

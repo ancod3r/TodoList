@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       defaultValue: 0
     },
-    // default values for dates => current time
+    // Column-4, default values for dates => current time
     // myDate: { type: DataTypes.DATE, 
     //         defaultValue: DataTypes.NOW(),
     //         allowNull: false
