@@ -2,19 +2,21 @@
 
 Todo-list Web Application made using NodeJS, Express, React, MySQL, GraphQL, Apollo-Client, Sequelize ORM, Here you can Add todo, Update, Delete and Strikethrough, All the data are stored in MySQL Database.
 
-<br>
+## Screenshots
 
-
+<p float="center">
+    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Home.png" width="800">
+    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Added-todos.png" width="800">
+    <img src="https://github.com/ancod3r/TodoList/blob/master/support/Operations-in-todos.png" width="800">
+</p>
 <!-- ![To-do list Operations](https://github.com/TodoList/blob/master/support/Home.png?raw=true) -->
-![To-do list Home](./support/Home.png?raw=true "Homepage")
-![To-do list Added-todos](./support/Added-todos.png?raw=true "Added Todos")
-![To-do list Operations-in-todos](./support/Operations-in-todos.png?raw=true "Operations in Todos")
+<!-- ![To-do list Home](./support/Home.png?raw=true "Homepage") -->
+<!-- ![To-do list Added-todos](./support/Added-todos.png?raw=true "Added Todos") -->
+<!-- ![To-do list Operations-in-todos](./support/Operations-in-todos.png?raw=true "Operations in Todos") -->
 
 ## Installation
 
-
 Install [NodeJS](https://nodejs.org/en/download/)
-
 
 - Start [Xampp](https://www.apachefriends.org/download.html) - *Apache* and *MySQL*
 - Goto http://localhost/phpmyadmin/
@@ -193,3 +195,8 @@ Pass query variable
 }
 ```
 
+## Author
+
+👤 **Rajneesh Kumar**
+
+* GitHub: [@ancod3r](https://github.com/ancod3r)
