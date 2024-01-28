@@ -202,4 +202,3 @@ Pass query variable
 👤 **Rajneesh Kumar**
 
 * GitHub: [@ancod3r](https://github.com/ancod3r)
-## Author
